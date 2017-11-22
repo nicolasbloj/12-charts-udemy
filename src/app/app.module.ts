@@ -3,12 +3,17 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 
+import { ChartsModule } from 'ng2-charts';
+import { LineComponent } from './components/line/line.component';
+
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    LineComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    ChartsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
